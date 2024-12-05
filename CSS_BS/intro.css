@@ -1,0 +1,25 @@
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    color: blueviolet;
+}
+
+.sub-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    color: grey;
+}
+
+#p1 {
+    font-size: 20px;
+    color: #333;
+    border: 1px solid green;
+}
+
