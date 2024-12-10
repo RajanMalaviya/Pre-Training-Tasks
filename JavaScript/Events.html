@@ -1,0 +1,35 @@
+<!-- JavaScript events examples -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <h2 style="color: blueviolet;">JavaScript Events</h2>
+
+    <p id="demo"></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date();">Show Date</button>
+
+    <p id="demo2"></p>
+    <button onclick="changeText()">Click Me</button>
+
+    <p id="hoverDemo">Hover over me!</p>
+
+    <script>
+        function changeText() {
+            document.getElementById('demo2').innerHTML = "Button Clicked!";
+        }
+
+        document.getElementById('hoverDemo').onmouseover = function() {
+            this.style.color = 'red';
+        }
+
+        document.getElementById('hoverDemo').onmouseout = function() {
+            this.style.color = 'black';
+        }
+    </script>
+</body>
+</html>
