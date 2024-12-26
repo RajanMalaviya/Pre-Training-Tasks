@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Selectors</title>
+</head>
+<body>
+    <p>1. Element Selector</p>
+    <p id="p1">2. ID Selector</p>
+    <p class="p2">3. Class Selector</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("p").css("color", "red");
+        $("#p1").css("color", "blue");
+        $(".p2").css("color", "green");
+    });
+
+    // other selectors
+    // $("*") - Selects all elements
+    // $(this) - Selects the current HTML element
+    // $("p.intro") - Selects all <p> elements with class="intro"
+    // $("p:first") - Selects the first <p> element
+    // $("ul li:first") - Selects the first <li> element of the first <ul>
+    // $("ul li:first-child") - Selects the first <li> element of every <ul>
+    // $("[href]") - Selects all elements with an href attribute
+    // $("a[target='_blank']") - Selects all <a> elements with a target attribute value equal to "_blank"
+    
+</script>
+</html>

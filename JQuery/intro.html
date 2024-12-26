@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Introduction</title>
+</head>
+<body>
+    <p>This is Body Text</p>
+    <p id="p1">Click to change color</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script>
+    $("p").click(function(){
+        $(this).hide();
+        console.log("Paragraph is hidden");
+    }); // This code will hide the paragraph when clicked on it.
+
+    $("#p1").hover(function(){
+        $(this).css("color", "red");
+        console.log("Paragraph color is changed to red");
+    }); // This code will change the color of the paragraph when hovered on it.
+
+
+</script>
+</html>
